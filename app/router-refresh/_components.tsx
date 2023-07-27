@@ -8,8 +8,11 @@ export default function Refresh() {
     return (
         <button
             className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full"
-            type="button" onClick={() => router.push(
-                '/router-refresh')}>
+            type="button" onClick={() => {
+                // router.push('/router-refresh')
+                router.refresh()
+            }
+                }>
             Refresh
         </button>
     )
